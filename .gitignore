@@ -1,0 +1,14 @@
+# Credentials and local execution data
+.env
+.env.*
+!.env.example
+node_modules/
+runs/
+*.log
+# Downloaded Jev-cu files are local dependencies, not part of this publication.
+vendor/
+scripts/loop.mjs
+scripts/policy.mjs
+scripts/jev-decide.mjs
+tests/core.test.mjs
+fixtures/

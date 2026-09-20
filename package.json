@@ -1,0 +1,12 @@
+{
+  "name": "jev-workflow-codex",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Checkpointed browser workflows and Codex handoff for Jev-cu",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "setup": "node scripts/setup-upstream.mjs",
+    "test": "node --test tests/*.test.mjs"
+  }
+}
