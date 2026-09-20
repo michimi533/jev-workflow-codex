@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-20",
+  "task": "Japanese Wikipedia: three articles, three named sections, 14 UI actions",
+  "scope": "Selected execution only; setup, implementation, tuning and discarded trials excluded. Not a model-only benchmark.",
+  "normal": {
+    "elapsed_seconds": 135.031,
+    "responses": 15,
+    "tokens": {
+      "input_tokens": 3139513,
+      "cached_input_tokens": 3132800,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1034,
+      "reasoning_output_tokens": 28,
+      "total_tokens": 3140547,
+      "uncached_input_tokens": 6713
+    }
+  },
+  "jev_assisted_codex": {
+    "elapsed_seconds": 64.027,
+    "responses": 2,
+    "tokens": {
+      "input_tokens": 437727,
+      "cached_input_tokens": 435840,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 619,
+      "reasoning_output_tokens": 107,
+      "total_tokens": 438346,
+      "uncached_input_tokens": 1887
+    }
+  },
+  "jev_api_separate": {
+    "successful_decisions": 14,
+    "http_503_count": 1,
+    "input_tokens": null,
+    "output_tokens": null,
+    "usage_status": "Not retained in benchmark recording",
+    "successful_latency_ms": 8413,
+    "reported_success_cost_usd": 0
+  },
+  "later_workflow_validation_separate": {
+    "elapsed_seconds": 105.069,
+    "actions": 14,
+    "stages": 15,
+    "chunk_pauses": 3,
+    "jev_requests": 17,
+    "jev_input_tokens": 17356,
+    "jev_output_tokens": 2503,
+    "jev_total_tokens": 19859,
+    "reported_cost_usd": 0,
+    "codex_tokens": null,
+    "notes": "Includes one dry-run and two decisions not acted on at chunk boundaries; elapsed includes Codex gaps. Different run, not comparable timing."
+  }
+}
